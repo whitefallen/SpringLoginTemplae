@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="default"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+</head>
+  <body>
+    <div layout:fragment="content">
+      <h1>Hello <span th:text="${currentUser.getFullName}">Begrüßung</span></h1>
+    </div>
+  </body>
+</html>
